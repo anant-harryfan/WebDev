@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <h2>How to use form</h2>
+   <form action="backend.php">
+       <label for="name">Name</label>
+       <div>
+            <input type="text" name="myName" id="name" > 
+       </div>
+       <br> <!--not recommeded br here when we learn css you will see-->
+       <label for="role">role</label>
+       <div>
+            <input type="text" name="myRole" id="role">
+       </div>
+       <br>
+       <label for="email">email</label>
+       <div>
+          <input type="email" name="myEmail" id="email" > 
+       </div>
+       <br>
+       <label for="date of boarn">date of boarn</label> 
+       <div>
+         <input type="date" name="myDate" id="date of boarn">
+        </div>
+        <br>
+        <label for="23">Gender</label>
+        <div>
+           male <input type="radio" name="Mygender" id="23">
+            female <input type="radio" name="Mygender" id="23">
+            other <input type="radio" name="Mygender">
+        </div>
+        <!-- there are more function explore it-->
+        <br>
+        <label for="text">kya pagal panti tune apne school me ki hai likho</label>
+        <div>
+         <textarea name="myText" rows="10" id="text"></textarea> 
+         </div>
+        <br>
+        <label for="18+">Are you greater than 18</label>
+        <div>
+            <input type="checkbox" name="" id="18+">
+        </div>
+        <br>
+        <label for="car">which car you have</label>
+        <select name="myCar" id="car">
+            <option value="ind">indiga</option>
+            <option value="lam">lamborgini</option>
+            <option value="poor" selected>i am garib i don't have car 🤣</option>
+        </select>
+        <br>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="reset now">
+        </div>
+   </form> 
+</body>
+</html>
+
+<!-- open arrow to see html code  -->

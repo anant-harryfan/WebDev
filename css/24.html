@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blur radius</title>
+    <style>       
+        .container{
+            display:flex
+        }
+        .cont{
+            /* border: 2px solid red; */
+
+            margin: 20px;
+            padding: 10px;
+            background-color: aqua;
+            /* write 2 value for giving box shadow
+            if you want shade in shadow write 3 value
+            and if you want colour spread write 4 value */
+
+            /*syntex = box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 10px 10px 20px; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 10px 10px 20px black; */
+            /* by inset you can give shadow inside the box  */
+            /* by comma you can give multiple shadow  */
+            /* box-shadow: inset 10px 2px red,20px 5px greenyellow */
+        }
+        
+        .cont h3{
+            /* text-shadow: 50px -40px black; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+
+        <div class="cont" id="contaner1">
+            <h3>Card 1</h3>           
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam veritatis, ad ipsam officia eius at et non praesentium nesciunt, est minima cupiditate eaque dicta itaque aut ut hic? Quisquam vero ipsam necessitatibus eaque labore?
+        </div>
+        <div class="cont" id="contaner2">
+            <h3>Card 2</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam veritatis, ad ipsam officia eius at et non praesentium nesciunt, est minima cupiditate eaque dicta itaque aut ut hic? Quisquam vero ipsam necessitatibus eaque labore?
+        </div>
+        <div class="cont" id="contaner3">
+            <h3>Card 3</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam veritatis, ad ipsam officia eius at et non praesentium nesciunt, est minima cupiditate eaque dicta itaque aut ut hic? Quisquam vero ipsam necessitatibus eaque labore?
+        </div> 
+    </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables/custom propertise</title>
+    <style>
+
+        :root{
+            /* by this you can make globle variable */
+            --box: red;
+        }
+        .box{                                                               
+            --box-colour: black; /* by this you can make a varible  --(variable name): (thing you want to store) it is a local variable*/
+            background-color: var(--box-colour); /*to triger the variable you have to use syntex - var(variable); */
+            width: 200px;
+            height: 200px;
+            border: 2px solid var(--box);
+            margin: 10px;
+        }
+        .container{
+            display: flex;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
