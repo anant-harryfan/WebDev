@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+
+/* we have to use this one
+font-family: 'Tenali Ramakrishna', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tenali Ramakrishna', sans-serif; 
+}
+
+/* i make it for this only, kam ka hai to lele nahi hai to mat le*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+} 
+
+/* if you want to add this button in your website take code after this comment*/
+a{
+    position: relative;
+    padding: 10px 30px;
+    margin: 0 15px;
+    color: #21ebff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    transition: 0.5s;
+    overflow: hidden;
+    /* border: 0.0001px solid white;*/
+    border-radius: 1px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0003) ;
+}
+a:nth-child(1){
+    filter: hue-rotate(300deg);
+}
+a:nth-child(3){
+    filter: hue-rotate(190deg);
+}
+a:hover{
+    background-color: #21ebff;
+    color: #111;
+    box-shadow: 0 0 50px cyan;
+    transition-delay: 0.5s;
+}
+a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;    
+    border-left: 2px solid #21ebff;    
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+a:hover:before{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
+
+a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;    
+    border-right: 2px solid #21ebff;    
+    transition: 0.5s;
+    /* border: 2px solid red; */ 
+    transition-delay: 0.5s;
+}
+a:hover:after{
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+}
