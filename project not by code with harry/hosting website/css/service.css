@@ -1,0 +1,18 @@
+body{
+    top: 0; 
+    justify-content: center;
+    background: black;
+    overflow-x: hidden;
+}
+header span{
+    color: white;
+}
+header a{
+    color: wheat;
+}
+section div h1{
+    color: white;
+}
+section p{
+    color: rgb(255, 255, 255);
+}

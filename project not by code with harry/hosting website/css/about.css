@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+
+/* we have to use this one
+font-family: 'Tenali Ramakrishna', sans-serif; */
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    top: 0; 
+    justify-content: center;
+    background: black;
+    overflow-x: hidden;
+}
+header span{
+    color: white;
+}
+header a{
+    color: wheat;
+}
+ section div h1{
+    color: white;
+}
+section p{
+    color: rgb(255, 255, 255);
+}
+
+.about-content{
+    /* background: white; */
+    width: 100%;
+    padding: 1rem 1rem;
+    display: flex;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 /6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.about-content .info{
+    width: 100%;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content .info .personal{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.about-content .info .personal .photo{
+    width: 40%;
+    display: flex;
+}
+
+.about-content .info .personal .photo img{
+    border-radius: 5px;
+}
+
+.about-content .info .personal .name{
+    align-items: flex-start;
+    width: 60%;
+    margin: 0px;
+}
+
+@media (max-width: 650px){
+    .about-content .info .personal .name{
+        align-items: flex-start;
+        width: 30%;
+        margin: 0;
+    }
+    .about-content .info .personal .photo{
+        display: none;
+    }
+    .about-content .info .personal .name p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1273px){
+    .about-content{
+        display: none;
+    }
+}
+
+.about-content .info .personal .name p{
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.about-content .info .personal .name p span{
+    font-weight: 600
+}
+
+.about-content .info .skills{
+    margin-left: 10rem;
+    margin-top: 5px;
+}
+
+.about-content .info .skills h4{
+    font-size: 20px;
+    margin-bottom: 1px;
+    color: white;
+}
+
+.about-content .info .skills .skill{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.about-content .info .skills .progress-line{
+    margin-top: 1px;
+    height: 8px;
+    width: 100%;
+    background: white;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.about-content .info .skills .progress-line span{
+    position: absolute;
+    height: 100%;
+    background: #0078ff;
+}
+
+.about-content .info .skills .progress-line .html{
+    width: 100%;
+}
+
+.about-content .info .skills .progress-line .css{
+    width: 100%;
+}
+
+.about-content .info .skills .progress-line .javascript{
+    width: 80%;
+}
+
+.about-content .info .skills .progress-line .php{
+    width: 70%;
+}
+
+.about-content .aboutme{
+    width: 50%;
+    padding: 20px 20px;
+}
+
+.about-content .aboutme h5{
+    font-size: 2rem;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.about-content .aboutme h5::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #0078ff;
+}
+
+.about-content .aboutme p{
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+/* .anant2{
+    border: none;
+    display: none;
+} */
+/* .anant{
+    background: transparent;
+    border: 2px solid white;
+}
+ #we{
+    margin-left: 500px;
+    width: 100%;
+}
+/*@media (max-width: 1024px){
+    body{
+        width: 75%;
+        overflow-x: hidden;
+    }
+    #we{
+        margin-left: 10px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    #we .anant{
+        height: 100%;
+        width: 100%;
+    }
+} */
+/*
+#we .box{
+    position: relative;
+    width: 1200px;
+    /* border: 2px solid red; *
+    height: 700px;
+    box-sizing: border-box;
+}
+
+#we .box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    clip-path: circle(400px at center 100px);
+    transition: 0.5s;
+    /* transition-delay: 0.5s; *
+    z-index: 10;
+}
+#we .box:hover .imgBx{
+    clip-path: circle(190px at center 200px);
+}
+#we .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#we .box .content{
+    position: absolute;
+    color: wheat;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 55%;
+    left: 0;
+    bottom: 0;
+    /* border: 2px solid white; *
+}
+#we .box .content h2{
+    margin-top: 60px;
+    font-size: 3rem;
+}
+#we .box .content p{
+    font-size: 2rem;
+}
+#we .box .content a{
+    font-size: 2rem;
+}
+#we .box .content h2,
+#we .box .content p,
+#we .box .content a{
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(20px);
+}
+#we .box:hover .content h2{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+#we .box:hover .content p{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.7s;
+}
+#we .box:hover .content a{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.9s;
+}
+ .content a{
+    position: relative;
+    padding: 2px 30px;
+    margin: 0 15px;
+    color: #21ebff;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* letter-spacing: 2px; *
+    font-size: 1.3rem;
+    transition: 0.5s;
+    /* border: 0.0001px solid white;*
+    transition-delay: 1s;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,#0003) ;
+}
+ .content a:hover{
+    background-color: #21ebff;
+    color: #111;
+    box-shadow: 0 0 50px cyan;
+}
+ .content a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #21ebff;    
+    border-left: 2px solid #21ebff;    
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+ .content a:hover:before{
+    width: 99%;
+    height: 99%;
+    transition-delay: 0s;
+}
+ .content a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #21ebff;    
+    border-right: 2px solid #21ebff;    
+    transition: 0.5s;
+    /* border: 2px solid red; * 
+    transition-delay: 0.5s;
+}
+ .content a:hover:after{
+    width: 98%;
+    height: 98%;
+    transition-delay: 0s;
+} 
+
+@media (max-width: 639px){
+    #we{
+        margin-left: 100px;
+        /* border: 2px solid red; *
+        position: relative;
+        width: 400px;
+        height: 50%;
+        /* border: 2px solid red; *
+        flex-wrap: wrap;
+        display: flex;
+    }
+    #we .box .imgBx img{
+        height: 50%;
+    }
+    #we .box:hover .imgBx{
+        clip-path: circle(100px at 180px 100px);
+    }
+    #we .box .content h2{
+        margin-top: -100px;
+        font-size: 1rem;
+    }
+    #we .box .content p{
+        font-size: 1rem;
+    }
+    @media (max-width: 639px){
+        /* section{
+            padding: 20px 20px 120px;
+        } *
+
+        .content{
+            flex-direction: column;
+            margin-top: 100px;
+        }
+        .content .textBox h2{
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .content .textBox{
+            max-width: 100%;
+        }
+        .sci li a{
+            filter: invert(1%);
+        }
+        .content .imgBox{
+            max-width: 100%;
+            justify-content: center;
+        }
+        .content .imgBox img{
+            max-width: 290px;
+        }
+        .thumb li img{
+            max-width: 40px;
+        }
+    }
+} */
